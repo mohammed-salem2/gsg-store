@@ -2,7 +2,7 @@
     <div class="ps-masonry">
         <div class="grid-sizer"></div>
         @foreach ($products as $product)
-        <div class="grid-item kids">
+        <div class="grid-item d-flex kids">
             @if($product->status == "active")
             <div class="grid-item__content-wrapper">
                 <x-product-item :product="$product" />

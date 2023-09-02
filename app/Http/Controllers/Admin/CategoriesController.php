@@ -125,13 +125,16 @@ class CategoriesController extends Controller
                 'disk' => 'public',
             ]);
         }
+        else {
+            $image = $categories->image;
+        }
         $categories->update([
             'name' => $request->get('name'),
             'parent_id' => $request->get('parent_id'),
             'slug' => Str::slug($request->get('name')),
             'status'=> $request->get('status'),
             'description' => $request->get('description'),
-            'image'=> $image ?? " " ,
+            'image'=> $image ?? null ,
             'admin_data' => auth()->user(),
         ]);
         return redirect(route('categories.index'))->with('success' , 'Category Updated is done');

@@ -3,7 +3,7 @@
     </div>
     <div class="ps-shoe__content">
         <div class="ps-shoe__variants">
-            <div class="ps-shoe__variant normal"><img src="{{  $product->image_url }}" alt=""><img src="{{  $product->image_url }}" alt=""><img src="{{  $product->image_url }}" alt=""></div>
+            {{-- <div class="ps-shoe__variant normal"><img src="{{  $product->image_url }}" alt=""><img src="{{  $product->image_url }}" alt=""><img src="{{  $product->image_url }}" alt=""></div> --}}
             <select class="ps-rating ps-shoe__rating">
                 <option value="1">1</option>
                 <option value="1">2</option>
